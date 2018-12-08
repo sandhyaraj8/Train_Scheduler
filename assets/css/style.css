@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(235, 241, 240);
+}
+
+
 #clock {
     /* background-color: black; */
     border-radius: 5px;
