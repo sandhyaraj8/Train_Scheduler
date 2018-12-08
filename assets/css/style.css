@@ -2,6 +2,9 @@ body {
     background-color: rgb(235, 241, 240);
 }
 
+#display {
+    margin-bottom: 50px;
+}
 
 #clock {
     /* background-color: black; */
