@@ -1,0 +1,16 @@
+#clock {
+    /* background-color: black; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    color:black;
+    font-family: "contrail One", sans-serif;
+    font-size: 2em;
+
+}
+
+.jumboHeaderImg {
+    background: url("image/train.jpg");
+    background-size: cover;
+}

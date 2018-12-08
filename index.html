@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <title>Train Schedule</title>
+  <style>
+
+    #display {
+    margin-bottom: 50px;
+  }
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid jumboHeaderImg">
+      <div class="container">
+        <h1 class="text-top">Train Schedule</h1>
+        <div id="clock"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="display">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-header text-white bg-primary">
+            Current Train Schedule
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Frequency(min)</th>
+                  <th scope="col">Next Arrival</th>
+                  <th scope="col">Minutes Away</th>
+                </tr>
+              </thead>
+              <tbody id="trainList">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Sign-Up Card-->
+      <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-header text-white bg-primary">
+            Add Train
+          </div>
+          <div class="card-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+
+            <form role="form" id="trainForm">
+              <div class="form-group row">
+                <label for="name-input">Train Name </label>
+                <input class="form-control" id="name-input" name="name" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="email-input">Destination</label>
+                <input class="form-control" id="destination-input" name="destination" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="time-input">First Train Time</label>
+                <input class="form-control" id="time-input" type="time" name="time" value="00:00">
+              </div>
+              <div class="form-group row">
+                <label for="frequency-input">Frequency(min)</label>
+                <input class="form-control" id="frequency-input" name="frequency" type="number">
+              </div>
+              <button class="btn btn-default" onmouseover="alert('Hello')" type="button">myClick</button>
+
+              <button class="btn btn-default" id="add-train" type="submit">Submit</button>
+            </form>
+          </div>
+          <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
